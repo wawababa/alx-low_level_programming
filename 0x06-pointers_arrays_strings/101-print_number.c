@@ -1,26 +1,23 @@
-#include "main.h"
-/**
- * rot13 - encrypts code
- * @s: string to encrypt
- * Return: char value
- */
-char *rot13(char *s)
-{
-	int i;
-	int j;
-	char encode1[] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
-	char encode2[] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
+#include <stdio.h>
 
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		for (j = 0; encode1[j]; j++)
-		{
-			if (s[i] == encode1[j])
-			{
-				s[i] = encode2[j];
-				break;
-			}
-		}
-	}
-	return (s);
+int main(void)
+{
+  int n;
+  int a[5];
+  int *p;
+
+  a[2] = 1024;
+  p = &n;
+  /*
+   * write your line of code here...
+   * Remember:
+   * - you are not allowed to use a
+   * - you are not allowed to modify p
+   * - only one statement
+   * - you are not allowed to code anything else than this line of code
+   */
+  ;
+  /* ...so that this prints 98\n */
+  printf("a[2] = %d\n", a[2]);
+  return (0);
 }
