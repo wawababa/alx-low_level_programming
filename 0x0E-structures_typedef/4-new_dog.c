@@ -2,15 +2,20 @@
 #include "dog.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_dog - prints a struct dog
+ * @d: struct dog to print
  */
-int main(void)
-{
-    dog_t *my_dog;
 
-    my_dog = new_dog("Poppy", 3.5, "Bob");
-    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog->name, my_dog->age);
-    return (0);
+ dog_t *new_dog(char *name, float age, char *owner)
+
+{
+	if (e == NULL)
+		return;
+
+	if (e->name == NULL)
+		e->name = "(nil)";
+	if (e->owner == NULL)
+		e->owner = "(nil)";
+
+	printf("Name: %s\nAge: %f\nOwner: %s\n", e->name, e->age, e->owner);
 }
